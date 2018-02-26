@@ -1,0 +1,16 @@
+<nav id="site-navigation">
+  <ul>
+    <li>
+      <a href="/">Our mission & principals</a>
+    </li>
+    <li>
+      <a href="/#fix-nyc-proposal">Fix NYC Proposal</a>
+    </li>
+    <li>
+      <a href="/supporters">Supporters</a>
+    </li>
+    <li>
+      <a href="/press">In The News</a>
+    </li>
+  </ul>
+</nav>

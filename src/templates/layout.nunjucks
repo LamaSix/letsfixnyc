@@ -40,31 +40,13 @@
           <img src="assets/img/logo.png" alt="Logo">
         </a>
       </div>
-      <nav id="site-navigation">
-  <ul>
-    <li>
-      <a href="/">Our mission & principals</a>
-    </li>
-    <li>
-      <a href="/#fix-nyc-proposal">Fix NYC Proposal</a>
-    </li>
-    <li>
-      <a href="/supporters">Supporters</a>
-    </li>
-    <li>
-      <a href="/press">In The News</a>
-    </li>
-  </ul>
-</nav>
-
+      {% include "partials/navigation.nunjucks" %}
       </nav>
     </header>
 
     <main class="main" role="main">
       <!-- You write code for this content block in another file -->
-      
-<h1>This is the index page</h1>
-
+      {% block content %} {% endblock %}
 
     </main>
 

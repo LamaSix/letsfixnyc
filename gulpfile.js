@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
     sourcemaps = require('gulp-sourcemaps'),
+    nunjucksRender = require('gulp-nunjucks-render'),
     package = require('./package.json');
 
 
@@ -54,6 +55,17 @@ gulp.task('js',function(){
     .pipe(browserSync.reload({stream:true, once: true}));
 });
 
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('src/pages/**/*.+(html|nunjucks)')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['src/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest('app'))
+});
+
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
         server: {
@@ -65,9 +77,10 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-gulp.task('dev', ['css','js', 'browser-sync'], function() {
+gulp.task('dev', ['css','js', 'nunjucks', 'browser-sync'], function() {
   gulp.watch("src/scss/**/*.scss", ['css']);
   gulp.watch("src/js/*.js", ['js']);
+  gulp.watch("src/**/*.nunjucks", ['nunjucks']);
   gulp.watch("app/*.html", ['bs-reload']);
 })
 
