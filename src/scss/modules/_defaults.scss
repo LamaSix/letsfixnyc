@@ -7,11 +7,11 @@ html {
 }
 
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-  transition: all .4s .3s ease-in;
+  font-family: $roboto;
+  font-size: 20px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
 }
-body,html{
-	min-height: 100vh;
-	overflow: hidden;
-}
+

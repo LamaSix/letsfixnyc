@@ -1,10 +1,76 @@
-@font-face {
-  font-family: 'Font-Name';
-  src: url('../fonts/font-name.eot');
-  src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/font-name.woff') format('woff'),
-       url('../fonts/font-name.ttf') format('truetype'),
-       url('../fonts/font-name.svg#font-name') format('svg');
-  font-weight: normal;
-  font-style: normal;
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:300,300i,400,400i,500,500i,700,700i');
+
+h1, h2, h3, h4, h5 {
+  font-family: $oswald;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 8vw;
+
+  @media only screen and (min-width: $sm-min-width) {
+	font-size: 5vw;
+  }
+
+  @media only screen and (min-width: $lg-min-width) {
+    font-size: 61px;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.pullquote, h3 {
+  font-family: $oswald;
+  font-size: 24px;
+  font-weight: 500;
+
+  @media only screen and (min-width: $sm-min-width) {
+	font-size: 42px;
+  }
+
+  &.orange-text {
+	color: $orange;
+  }
+}
+
+h3 {
+  margin-top: 80px;
+}
+
+h4 {
+  color: $orange;
+  font-family: $oswald;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5 {
+  margin: 0;
+}
+
+.highlighter {
+  margin-left: 20px;
+
+  > * {
+	background: #fff;
+	box-shadow: 50px 0 0 #fff, -20px 0 0 #fff;
+	display: inline;
+	line-height: 1.6;
+	display: inline;
+  }
+
+  &.orange > * {
+	color: #fff;
+	background: $orange;
+	box-shadow: 50px 0 0 $orange, -20px 0 0 $orange;
+  }
+
+  &.grey > * {
+	background: $grey;
+	box-shadow: 50px 0 0 $grey, -20px 0 0 $grey;
+  }
 }

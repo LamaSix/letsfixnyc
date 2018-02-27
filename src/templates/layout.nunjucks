@@ -1,3 +1,5 @@
+{% set pageID = pageID | default('') %}
+
 <!doctype html>
 <html class="no-js">
   <head>
@@ -28,36 +30,27 @@
 
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="/assets/css/style.min.css" rel="stylesheet">
 
-    <script src="assets/components/modernizr/modernizr.js"></script>
+    <script src="/assets/components/modernizr/modernizr.js"></script>
   </head>
-  <body>
+  <body id="{{ pageID }}">
 
-    <header class="header" role="banner">
-      <div class="logo">
-        <a href="/">
-          <img src="assets/img/logo.png" alt="Logo">
-        </a>
-      </div>
-      {% include "partials/navigation.nunjucks" %}
-      </nav>
-    </header>
+
+    {% include "partials/header.nunjucks" %}
 
     <main class="main" role="main">
-      <!-- You write code for this content block in another file -->
-      {% block content %} {% endblock %}
-
+      {% block content %}
+      {% endblock %}
     </main>
 
-    <aside class="sidebar" role="complementary">
-    </aside>
+
     <footer class="footer" role="contentinfo">
 
     </footer>
 
-    <script src="assets/components/jquery/jquery.min.js"></script>
-    <script src="assets/js/scripts.min.js"></script>
+    <script src="/assets/components/jquery/jquery.min.js"></script>
+    <script src="/assets/js/scripts.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

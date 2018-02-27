@@ -1,0 +1,285 @@
+
+
+body#home main {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+a.button {
+  font-family: $oswald;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  color: #000;
+  background: #fff;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+
+main {
+  > section {
+	margin-top: -1px;
+	padding-top: 1px;
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+
+	.section-inner-wrapper {
+
+	  margin: 60px 8.333%;
+
+	  @media only screen and (min-width: $lg-min-width) {
+		max-width: calc(1440px - 16.67%);
+		margin: 60px auto;
+	  }
+
+	  .content-wrapper {
+		@media only screen and (min-width: $lg-min-width) {
+		  margin: 0 4.12%;
+		}
+
+		ol, ul {
+		  list-style: none;
+		}
+
+		ol {
+		  counter-reset: ol-counter;
+		  > li {
+			position: relative;
+			margin: 60px 0;
+			&:before {
+			  position: absolute;
+			  top: -40px;
+			  left: -40px;
+			  font-family: $oswald;
+			  font-size: 2.5em;
+			  font-weight: bold;
+			  color: $orange;
+			  content: counter(ol-counter);
+			  counter-increment: ol-counter;
+			  text-align: right;
+			  width: 35px;
+			}
+		  }
+		}
+
+		ul {
+		  padding-left: 15px;
+		  @media only screen and (min-width: $sm-min-width) {
+			padding-left: 40px;
+		  }
+		  li {
+			position: relative;
+			margin: 20px 0;
+
+			&:before {
+			  left: -20px;
+			  top: 5px;
+			  width: 10px;
+			  height: 10px;
+			  position: absolute;
+			  content: "";
+			  display: block;
+			  border-radius: 50%;
+			  background: $orange;
+
+			  @media only screen and (min-width: $sm-min-width) {
+				left: -30px;
+				top: 5px;
+				width: 15px;
+				height: 15px;
+			  }
+			}
+		  }
+		}
+	  }
+
+	  .heading-wrapper {
+		width: 50%;
+		padding-top: 10vw;
+
+		h1 {
+		  a {
+			color: #000;
+		  }
+		}
+	  }
+	}
+
+	&.main-heading {
+	  padding-top: 100px;
+	  background-repeat: no-repeat;
+	  background-size: auto 100%;
+	  background-position: top center;
+	  height: 500px;
+
+	  @media only screen and (min-width: $sm-min-width) {
+		height: 60vw;
+	  }
+
+	  &#mission-header {
+		background-image: url('/assets/img/home-header.png');
+	  }
+
+	  &#fix-ny-plan {
+		background-image: url('/assets/img/whitearrow.png');
+		background-color: $grey;
+		background-position: -100px 50px;
+	  }
+
+	  .section-inner-wrapper {
+		margin-top: 0;
+	  }
+	}
+
+
+	&#mission {
+	  background-image: url('/assets/img/bg-map.png');
+	  background-color: $grey;
+
+	  .continued-statement {
+		p {
+		  @media only screen and (min-width: $sm-min-width) {
+			display: block;
+			width: 30%;
+			float: left;
+			margin-left: 5%;
+
+			&:first-of-type {
+			  margin-left: 0;
+			}
+		  }
+		}
+
+		&:after {
+		  display: table;
+		  content: "";
+		  clear: both;
+		}
+	  }
+	}
+
+	&#sign-our-petition {
+	  height: 500px;
+	  background-image: url('/assets/img/sign-our-petition.png');
+	  background-repeat: no-repeat;
+	  background-size: auto 100%;
+	  background-position: top center;
+
+	  @media only screen and (min-width: $sm-min-width) {
+		min-height: 50vw;
+	  }
+	}
+
+	&#plan-overview {
+	  background: $orange;
+
+	  .section-inner-wrapper {
+		margin-top: 80px;
+		margin-bottom: 80px;
+	  }
+
+	  .download {
+		text-align: center;
+		margin : 60px 0 25px;
+	  }
+	}
+
+	&#other-elements {
+	  background: $grey;
+	}
+  }
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body#supporters {
+  main {
+	background: url('/assets/img/greyarrow.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: left bottom;
+	position: fixed;
+	top: 75px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+
+	.supporter-groups {
+	  margin-top: 100px;
+	  column-count: 2;
+	  column-gap: 100px;
+	  .supporters {
+		margin: 50px 0;
+		break-inside: avoid;
+
+		ul li {
+		  margin: 10px 0;
+		  &:before {
+			left: -20px;
+			width: 10px;
+			height: 10px;
+		  }
+		}
+	  }
+	}
+  }
+}
+
+body#press {
+  main {
+	background: url('/assets/img/press.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: left 33%;
+	position: fixed;
+	top: 75px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+
+	#press-list {
+	  ul {
+		width: 70%;
+		li.press-item {
+		  position: relative;
+		  margin: 100px 0;
+
+		  a {
+			color: #000;
+			text-decoration: none;
+
+			.publisher {
+			  position: absolute;
+			  top: -30px;
+			}
+			.headline {
+			  font-family: $oswald;
+			  font-weight: 900;
+			  font-size: 42px;
+			  line-height: 1.1;
+			}
+
+			.meta {
+			  margin-top: 20px;
+			  .byline {
+				font-style: italic;
+				margin-right: 10px;
+			  }
+			}
+
+		  }
+
+		  &:before {
+			top: 20px;
+		  }
+		}
+	  }
+	}
+  }
+}

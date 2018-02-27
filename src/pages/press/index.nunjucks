@@ -1,0 +1,120 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'press' %}
+
+{%
+	set pressItems = [
+		{
+			publisher: "Daily News",
+			title: "Stand up for the 96% and support congestion pricing [Editorial]",
+			date: "January 30, 2018",
+			link: "http://www.nydailynews.com/opinion/stand-96-support-congestion-pricing-article-1.3786696"
+		},
+		{
+			publisher: "NYTimes",
+			title: "A Pricing Scheme to Unclog New York’s Arteries [Editorial]",
+			date: "January 22, 2018",
+			link: "https://www.nytimes.com/2018/01/22/opinion/nyc-subway-congestion-pricing-cuomo.html"
+		},
+		{
+			publisher: "Crain’s NY",
+			title: "Traffic congestion costs metro economy $20 billion a year: study",
+			byline: "By Will Bredderman",
+			date: "January 18, 2018",
+			link: "http://www.crainsnewyork.com/article/20180118/POLITICS/180119895/traffic-congestion-costs-metro-economy-20-billion-a-year-study"
+		},
+		{
+			publisher: "NYTimes",
+			title: "How to Get New York Moving Again [Op-Ed]",
+			byline: "By David Leonhardt",
+			date: "January 7, 2018",
+			link: "https://www.nytimes.com/2018/01/07/opinion/new-york-traffic-cuomo.html"
+		},
+		{
+			publisher: "Newsday",
+			title: "Widen input for tolling plan [Editorial]",
+			date: "October 8, 2017",
+			link: "https://www.newsday.com/opinion/editorial/widen-input-for-tolling-plan-1.14372460"
+		},
+		{
+			publisher: "Newsday",
+			title: "How NYC congestion pricing affects LI [Op-Ed]",
+			byline: "By Randi F. Marshall",
+			date: "January 30, 2018",
+			link: "https://www.newsday.com/opinion/columnists/randi-marshall/li-reps-should-read-this-about-tolling-plan-1.16448173"
+		},
+		{
+			publisher: "Inside City Hall",
+			title: "Congestion Concerns: Sam Schwartz [Video]",
+			date: "January 26, 2018",
+			link: "http://www.ny1.com/nyc/all-boroughs/inside-city-hall/2018/01/27/congestion-concerns"
+		},
+		{
+			publisher: "CityLab",
+			title: "Could Congestion Pricing Finally Work for New York City?",
+			byline: "By Laura Bliss",
+			date: "January 18, 2018",
+			link: "https://www.citylab.com/transportation/2018/01/could-congestion-pricing-finally-work-for-new-york-city/550958/"
+		},
+		{
+			publisher: "Daily News",
+			title: "The right way to do congestion pricing [Opinion]",
+			byline: "By Robert Rodriguez and Alex Matthiessen",
+			date: "December 8, 2017",
+			link: "http://www.nydailynews.com/opinion/congestion-pricing-article-1.3684274"
+		},
+		{
+			publisher: "NYTimes",
+			title: "New York’s Tilt Toward Congestion Pricing Was Years in the Making",
+			byline: "By Winnie Hu",
+			date: "November 28, 2017",
+			link: "https://www.nytimes.com/2017/11/28/nyregion/congestion-pricing-new-york.html"
+		},
+		{
+			publisher: "amNY",
+			title: "Mayor’s plan won’t get NYC traffic flowing [Editorial]",
+			date: "October 24, 2017",
+			link: "https://www.amny.com/opinion/editorial/mayor-s-plan-won-t-get-nyc-traffic-flowing-1.14605992"
+		}
+	]
+
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{{ test.this }}
+<section id="press-list" class="main-heading">
+	<div class="section-inner-wrapper">
+		<div class="content-wrapper">
+			<ul>
+				{% for pressItem in pressItems %}
+				<li class="press-item">
+					<a href="{{ pressItem.link }}" target="_blank">
+						<div class="headline">
+							{{ pressItem.title }}
+						</div>
+						<div class="publisher">
+							{{ pressItem.publisher }}
+						</div>
+						<div class="meta">
+							{% if pressItem.byline %}
+								<span class="byline">
+									{{ pressItem.byline }}
+								</span>
+							{% endif %}
+
+							<span class="date">
+								{{ pressItem.date }}
+							</span>
+						</div>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+
+		</div>
+	</div>
+</section>
+
+{% endblock %}

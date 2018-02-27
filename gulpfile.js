@@ -61,6 +61,9 @@ gulp.task('nunjucks', function() {
   // Renders template with nunjucks
   .pipe(nunjucksRender({
       path: ['src/templates']
+    }).on('error', function(error) {
+      console.log("there was an error compiling nunjucks templates");
+      console.log(error);
     }))
   // output files in app folder
   .pipe(gulp.dest('app'))

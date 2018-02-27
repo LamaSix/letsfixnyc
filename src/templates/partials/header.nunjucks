@@ -1,0 +1,37 @@
+<header class="header" role="banner">
+	<div class="logo">
+		<a href="/">
+			{% if pageID == 'home' %}
+				<img src="/assets/img/logo-white.png" alt="Logo">
+			{% else %}
+				<img src="/assets/img/logo-black.png" alt="Logo">
+			{% endif %}
+		</a>
+	</div>
+	<nav id="site-navigation">
+		<button class="menu-toggle">&#9776; Menu</button>
+		<ul class="nav-items">
+			<li>
+				<a href="/">Our mission & principals</a>
+			</li>
+			<li>
+				<a href="/fix-ny-proposal">Fix NY Proposal</a>
+			</li>
+			<li>
+				<a href="/supporters">Supporters</a>
+			</li>
+			<li>
+				<a href="/press">In The News</a>
+			</li>
+			<li>
+				<a class="button"
+				   href="https://www.change.org/p/speaker-heastie-majority-leader-flanagan-fix-nyc-failing-transit-system-with-the-move-ny-fair-plan?recruiter=516383072&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition"
+				   target="_blank">Sign our petition</a>
+			</li>
+		</ul>
+		<ul class="social-items">
+			<li><a href="" class="facebook"><img src="/assets/img/facebook.png"></a></li>
+			<li><a href="" class="twitter"><img src="/assets/img/twitter.png"></a></li>
+		</ul>
+	</nav>
+</header>
