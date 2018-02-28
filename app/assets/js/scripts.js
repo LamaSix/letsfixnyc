@@ -15,8 +15,8 @@
       ev.preventDefault();
       $('ul.nav-items').toggleClass('active');
 		$('ul.social-items').toggleClass('active');
-      $(this).toggleClass('menu-active')
-    })
+      $(this).toggleClass('menu-active');
+    });
   });
 
 })(jQuery, window, document);

@@ -58,7 +58,7 @@
       }
 
       &.menu-active {
-        content: "Close";
+        color: #fff;
       }
     }
 
@@ -67,7 +67,7 @@
       list-style: none;
       line-height: 1;
       margin: 0;
-      padding: 100px 8.33% 0;
+      padding: 50px 8.33% 0;
       position: fixed;
       background: $orange;
       top: 0;
@@ -94,11 +94,12 @@
 
       &.active {
         display: block;
+        overflow: auto;
       }
 
       li {
         display: block;
-        margin: 45px 0;
+        margin: 6vh 0;
 
         @media only screen and (min-width: $md-min-width) {
           vertical-align: top;
@@ -114,7 +115,7 @@
           text-decoration: none;
           text-transform: uppercase;
           font-weight: bold;
-          font-size: 8vw;
+          font-size: 7vw;
           color: #fff;
 
           @media only screen and (min-width: $md-min-width) {
@@ -149,8 +150,9 @@
         margin-left: 0;
         z-index: 999;
         position: fixed;
-        bottom: 50px;
+        bottom: 20px;
         top: auto;
+        padding-top: 0;
 
         @media only screen and (min-width: $md-min-width) {
           position: relative;
@@ -164,6 +166,7 @@
         li {
           margin-right: 1vw;
           display: inline-block;
+          margin: 0;
 
           @media only screen and (min-width: $sm-min-width) {
             margin-right: 0px;

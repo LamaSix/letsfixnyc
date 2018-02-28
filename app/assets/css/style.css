@@ -440,13 +440,13 @@ textarea {
         .header nav button.menu-toggle {
           display: none; } }
       .header nav button.menu-toggle.menu-active {
-        content: "Close"; }
+        color: #fff; }
     .header nav ul {
       display: none;
       list-style: none;
       line-height: 1;
       margin: 0;
-      padding: 100px 8.33% 0;
+      padding: 50px 8.33% 0;
       position: fixed;
       background: #ea6d23;
       top: 0;
@@ -469,10 +469,11 @@ textarea {
         .header nav ul {
           margin-left: 35px; } }
       .header nav ul.active {
-        display: block; }
+        display: block;
+        overflow: auto; }
       .header nav ul li {
         display: block;
-        margin: 45px 0; }
+        margin: 6vh 0; }
         @media only screen and (min-width: 1024px) {
           .header nav ul li {
             vertical-align: top;
@@ -485,7 +486,7 @@ textarea {
           text-decoration: none;
           text-transform: uppercase;
           font-weight: bold;
-          font-size: 8vw;
+          font-size: 7vw;
           color: #fff; }
           @media only screen and (min-width: 1024px) {
             .header nav ul li a {
@@ -511,8 +512,9 @@ textarea {
         margin-left: 0;
         z-index: 999;
         position: fixed;
-        bottom: 50px;
-        top: auto; }
+        bottom: 20px;
+        top: auto;
+        padding-top: 0; }
         @media only screen and (min-width: 1024px) {
           .header nav ul.social-items {
             position: relative;
@@ -523,7 +525,8 @@ textarea {
             margin-top: -5px; } }
         .header nav ul.social-items li {
           margin-right: 1vw;
-          display: inline-block; }
+          display: inline-block;
+          margin: 0; }
           @media only screen and (min-width: 768px) {
             .header nav ul.social-items li {
               margin-right: 0px; } }
