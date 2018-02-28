@@ -435,7 +435,7 @@ textarea {
       margin-top: 0;
       padding: 100px 40px 0;
       position: fixed;
-      background: #e95c26;
+      background: #ea6d23;
       top: 0;
       bottom: 0;
       left: 0;
@@ -483,7 +483,7 @@ textarea {
               font-size: 14px; } }
           .header nav ul li a.button {
             padding: 10px;
-            background: #e95c26; }
+            background: #ea6d23; }
             @media only screen and (max-width: 1023px) {
               .header nav ul li a.button {
                 padding: 0;
@@ -546,13 +546,13 @@ h2 {
     .pullquote, h3 {
       font-size: 42px; } }
   .pullquote.orange-text, h3.orange-text {
-    color: #e95c26; }
+    color: #ea6d23; }
 
 h3 {
   margin-top: 80px; }
 
 h4 {
-  color: #e95c26;
+  color: #ea6d23;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: 400; }
@@ -582,11 +582,11 @@ p + h5 {
         box-shadow: 50px 0 0 #fff, -20px 0 0 #fff; } }
   .highlighter.orange > * {
     color: #fff;
-    background: #e95c26;
-    box-shadow: 30px 0 0 #e95c26, -10px 0 0 #e95c26; }
+    background: #ea6d23;
+    box-shadow: 30px 0 0 #ea6d23, -10px 0 0 #ea6d23; }
     @media only screen and (min-width: 768px) {
       .highlighter.orange > * {
-        box-shadow: 50px 0 0 #e95c26, -20px 0 0 #e95c26; } }
+        box-shadow: 50px 0 0 #ea6d23, -20px 0 0 #ea6d23; } }
   .highlighter.grey > * {
     background: #e8e8e8;
     box-shadow: 50px 0 0 #e8e8e8, -20px 0 0 #e8e8e8; }
@@ -654,7 +654,7 @@ main > section {
           font-size: 2em;
           font-family: "Oswald", sans-serif;
           font-weight: bold;
-          color: #e95c26;
+          color: #ea6d23;
           content: counter(ol-counter);
           counter-increment: ol-counter;
           text-align: right; }
@@ -681,7 +681,7 @@ main > section {
           content: "";
           display: block;
           border-radius: 50%;
-          background: #e95c26; }
+          background: #ea6d23; }
           @media only screen and (min-width: 768px) {
             main > section .section-inner-wrapper .content-wrapper ul li:before {
               left: -30px;
@@ -736,7 +736,7 @@ main > section {
       main > section#sign-our-petition {
         min-height: 50vw; } }
   main > section#plan-overview {
-    background: #e95c26; }
+    background: #ea6d23; }
     main > section#plan-overview .section-inner-wrapper {
       margin-top: 80px;
       margin-bottom: 80px; }
