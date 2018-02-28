@@ -25,7 +25,7 @@ h2 {
 
 .pullquote, h3 {
   font-family: $oswald;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
 
   @media only screen and (min-width: $sm-min-width) {
@@ -50,23 +50,43 @@ h4 {
 
 h5 {
   margin: 0;
+  font-size: 1em;
+}
+
+h5 + p {
+  margin-top: 0;
+}
+
+p + h5 {
+  margin: 50px 0 0;
 }
 
 .highlighter {
-  margin-left: 20px;
+  margin-left: 10px;
+
+  @media only screen and (min-width: $sm-min-width) {
+	margin-left: 20px;
+  }
 
   > * {
 	background: #fff;
-	box-shadow: 50px 0 0 #fff, -20px 0 0 #fff;
-	display: inline;
+	box-shadow: 30px 0 0 #fff, -10px 0 0 #fff;
 	line-height: 1.6;
 	display: inline;
+
+	@media only screen and (min-width: $sm-min-width) {
+	  box-shadow: 50px 0 0 #fff, -20px 0 0 #fff;
+	}
   }
 
   &.orange > * {
 	color: #fff;
 	background: $orange;
-	box-shadow: 50px 0 0 $orange, -20px 0 0 $orange;
+	box-shadow: 30px 0 0 $orange, -10px 0 0 $orange;
+
+	@media only screen and (min-width: $sm-min-width) {
+	  box-shadow: 50px 0 0 $orange, -20px 0 0 $orange;
+	}
   }
 
   &.grey > * {

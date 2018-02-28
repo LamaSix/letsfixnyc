@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8b09ad4-dd3f-439d-b0aa-0e9b128a58d4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/assets/css/style.css" afterPath="$PROJECT_DIR$/app/assets/css/style.css" />
       <change beforePath="$PROJECT_DIR$/app/assets/css/style.min.css" afterPath="$PROJECT_DIR$/app/assets/css/style.min.css" />
-      <change beforePath="$PROJECT_DIR$/app/assets/img/logo.png" afterPath="$PROJECT_DIR$/app/assets/img/logo-black.png" />
-      <change beforePath="$PROJECT_DIR$/app/assets/js/scripts.js" afterPath="$PROJECT_DIR$/app/assets/js/scripts.js" />
-      <change beforePath="$PROJECT_DIR$/app/assets/js/scripts.min.js" afterPath="$PROJECT_DIR$/app/assets/js/scripts.min.js" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change beforePath="$PROJECT_DIR$/src/js/scripts.js" afterPath="$PROJECT_DIR$/src/js/scripts.js" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.nunjucks" afterPath="$PROJECT_DIR$/src/pages/index.nunjucks" />
+      <change beforePath="$PROJECT_DIR$/app/fix-ny-proposal/index.html" afterPath="$PROJECT_DIR$/app/fix-ny-proposal/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/pages/fix-ny-proposal/index.nunjucks" afterPath="$PROJECT_DIR$/src/pages/fix-ny-proposal/index.nunjucks" />
       <change beforePath="$PROJECT_DIR$/src/scss/modules/_app.scss" afterPath="$PROJECT_DIR$/src/scss/modules/_app.scss" />
-      <change beforePath="$PROJECT_DIR$/src/scss/modules/_defaults.scss" afterPath="$PROJECT_DIR$/src/scss/modules/_defaults.scss" />
       <change beforePath="$PROJECT_DIR$/src/scss/modules/_typography.scss" afterPath="$PROJECT_DIR$/src/scss/modules/_typography.scss" />
-      <change beforePath="$PROJECT_DIR$/src/scss/modules/_vars.scss" afterPath="$PROJECT_DIR$/src/scss/modules/_vars.scss" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_header.scss" afterPath="$PROJECT_DIR$/src/scss/partials/_header.scss" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_nav.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" afterPath="$PROJECT_DIR$/src/scss/style.scss" />
-      <change beforePath="$PROJECT_DIR$/src/templates/layout.nunjucks" afterPath="$PROJECT_DIR$/src/templates/layout.nunjucks" />
-      <change beforePath="$PROJECT_DIR$/src/templates/partials/navigation.nunjucks" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +22,8 @@
       <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/modules/_typography.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -53,8 +42,18 @@
       <file leaf-file-name="_app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/modules/_app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="152" column="17" lean-forward="true" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+            <state relative-caret-position="131">
+              <caret line="220" column="32" lean-forward="false" selection-start-line="220" selection-start-column="32" selection-end-line="220" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.nunjucks" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/fix-ny-proposal/index.nunjucks">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -131,6 +130,10 @@
       <find>#e</find>
       <find>pull</find>
       <find>h3</find>
+      <find>ol</find>
+      <find>big-</find>
+      <find>down</find>
+      <find>column</find>
     </findStrings>
     <replaceStrings>
       <replace>-</replace>
@@ -147,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/templates/layout.nunjucks" />
         <option value="$PROJECT_DIR$/src/scss/modules/_vars.scss" />
         <option value="$PROJECT_DIR$/src/pages/index.nunjucks" />
-        <option value="$PROJECT_DIR$/src/pages/fix-ny-proposal/index.nunjucks" />
         <option value="$PROJECT_DIR$/src/pages/supporters/index.nunjucks" />
         <option value="$PROJECT_DIR$/src/pages/press/index.nunjucks" />
         <option value="$PROJECT_DIR$/src/scss/partials/_nav.scss" />
@@ -157,6 +159,7 @@
         <option value="$PROJECT_DIR$/src/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/scss/partials/_header.scss" />
         <option value="$PROJECT_DIR$/src/scss/modules/_defaults.scss" />
+        <option value="$PROJECT_DIR$/src/pages/fix-ny-proposal/index.nunjucks" />
         <option value="$PROJECT_DIR$/src/scss/modules/_typography.scss" />
         <option value="$PROJECT_DIR$/src/scss/modules/_app.scss" />
       </list>
@@ -177,11 +180,11 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="44" />
-    <option name="width" value="1425" />
-    <option name="height" value="1553" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-71" />
+    <option name="y" value="407" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -243,6 +246,19 @@
               <item name="moveny" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="moveny" type="b2602c69:ProjectViewProjectNode" />
+              <item name="moveny" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="moveny" type="b2602c69:ProjectViewProjectNode" />
+              <item name="moveny" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fix-ny-proposal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="moveny" type="b2602c69:ProjectViewProjectNode" />
@@ -322,15 +338,15 @@
       <updated>1519700817139</updated>
       <workItem from="1519700818983" duration="552000" />
       <workItem from="1519701671263" duration="219000" />
-      <workItem from="1519741045547" duration="20042000" />
+      <workItem from="1519741045547" duration="21947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20813000" />
+    <option name="totallyTimeSpent" value="22718000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="44" width="1425" height="1553" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -339,7 +355,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14461316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1615509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -421,14 +437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/fix-ny-proposal/index.nunjucks">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -521,6 +529,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/fix-ny-proposal/index.nunjucks">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/modules/_defaults.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -531,16 +547,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/modules/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="312">
+          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/modules/_app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="152" column="17" lean-forward="true" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+        <state relative-caret-position="131">
+          <caret line="220" column="32" lean-forward="false" selection-start-line="220" selection-start-column="32" selection-end-line="220" selection-end-column="32" />
           <folding />
         </state>
       </provider>

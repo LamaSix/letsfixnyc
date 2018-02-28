@@ -43,21 +43,30 @@ main {
 
 		ol {
 		  counter-reset: ol-counter;
+		  padding-left: 20px;
+
 		  > li {
 			position: relative;
 			margin: 60px 0;
 			&:before {
 			  position: absolute;
-			  top: -40px;
-			  left: -40px;
+			  width: 25px;
+			  top: -20px;
+			  left: -30px;
+			  font-size: 2em;
 			  font-family: $oswald;
-			  font-size: 2.5em;
 			  font-weight: bold;
 			  color: $orange;
 			  content: counter(ol-counter);
 			  counter-increment: ol-counter;
 			  text-align: right;
-			  width: 35px;
+
+			  @media only screen and (min-width: $sm-min-width) {
+				width: 35px;
+				top: -40px;
+				left: -40px;
+				font-size: 2.5em;
+			  }
 			}
 		  }
 		}
@@ -110,7 +119,6 @@ main {
 	  background-repeat: no-repeat;
 	  background-size: auto 100%;
 	  background-position: top center;
-	  height: 500px;
 
 	  @media only screen and (min-width: $sm-min-width) {
 		height: 60vw;
@@ -123,7 +131,9 @@ main {
 	  &#fix-ny-plan {
 		background-image: url('/assets/img/whitearrow.png');
 		background-color: $grey;
-		background-position: -100px 50px;
+		@media only screen and (min-width: $sm-min-width) {
+		  background-position: -100px 50px;
+		}
 	  }
 
 	  .section-inner-wrapper {
@@ -181,6 +191,11 @@ main {
 	  .download {
 		text-align: center;
 		margin : 60px 0 25px;
+
+		@media only screen and (max-width: $sm-max-width) {
+		  font-size: 14px;
+		}
+
 	  }
 	}
 
@@ -198,21 +213,33 @@ main {
 
 body#supporters {
   main {
-	background: url('/assets/img/greyarrow.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: left bottom;
-	position: fixed;
-	top: 75px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	overflow: auto;
+
+	&:before {
+	  content: "";
+	  background: url('/assets/img/greyarrow.png');
+	  background-repeat: no-repeat;
+	  background-size: 100% auto;
+	  background-position: left bottom;
+	  position: fixed;
+	  top: 75px;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  z-index: -1;
+
+	  @media only screen and (min-width: $sm-min-width) {
+		background-size: 100%;
+	  }
+	}
 
 	.supporter-groups {
 	  margin-top: 100px;
-	  column-count: 2;
-	  column-gap: 100px;
+
+	  @media only screen and (min-width: $sm-min-width) {
+		column-count: 2;
+		column-gap: 100px;
+	  }
+
 	  .supporters {
 		margin: 50px 0;
 		break-inside: avoid;
@@ -232,20 +259,28 @@ body#supporters {
 
 body#press {
   main {
-	background: url('/assets/img/press.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: left 33%;
-	position: fixed;
-	top: 75px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	overflow: auto;
+
+	&:before {
+	  content: "";
+	  background: url('/assets/img/press.png');
+	  background-repeat: no-repeat;
+	  background-size: 100%;
+	  background-position: left 33%;
+	  position: fixed;
+	  top: 75px;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	}
 
 	#press-list {
 	  ul {
-		width: 70%;
+		width: 100%;
+
+		@media only screen and (min-width: $sm-min-width) {
+		  width: 70%;
+		}
+
 		li.press-item {
 		  position: relative;
 		  margin: 100px 0;
@@ -261,8 +296,12 @@ body#press {
 			.headline {
 			  font-family: $oswald;
 			  font-weight: 900;
-			  font-size: 42px;
+			  font-size: 30px;
 			  line-height: 1.1;
+
+			  @media only screen and (min-width: $sm-min-width) {
+				font-size: 42px;
+			  }
 			}
 
 			.meta {
