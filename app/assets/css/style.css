@@ -915,7 +915,11 @@ body#press main #press-list ul {
       text-decoration: none; }
       body#press main #press-list ul li.press-item a .publisher {
         position: absolute;
-        top: -30px; }
+        top: -30px;
+        height: 15px; }
+        body#press main #press-list ul li.press-item a .publisher img {
+          width: auto;
+          height: 100%; }
       body#press main #press-list ul li.press-item a .headline {
         font-family: "Oswald", sans-serif;
         font-weight: 900;
