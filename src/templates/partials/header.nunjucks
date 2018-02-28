@@ -1,3 +1,35 @@
+{% set navItems = [
+	{
+		url: '/',
+		slug: 'home',
+		title: 'Our mission & principals'
+	},
+	{
+		url: '/fix-ny-proposal',
+		slug: 'fix-ny-proposal',
+		title: 'Fix NY Proposal'
+	},
+	{
+		url: '/supporters',
+		slug: 'supporters',
+		title: 'Supporters'
+	},
+	{
+		url: '/press',
+		slug: 'press',
+		title: 'Press'
+	},
+	{
+		url: 'https://www.change.org/p/speaker-heastie-majority-leader-flanagan-fix-nyc-failing-transit-system-with-the-move-ny-fair-plan?recruiter=516383072&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition',
+		slug: 'petition',
+		title: 'Sign our petition',
+		button: true
+	}
+]
+%}
+
+{% set pageID = pageID | default('') %}
+
 <header class="header" role="banner">
 	<div class="logo">
 		<a href="/">
@@ -11,23 +43,14 @@
 	<nav id="site-navigation">
 		<button class="menu-toggle">&#9776; Menu</button>
 		<ul class="nav-items">
-			<li>
-				<a href="/">Our mission & principals</a>
-			</li>
-			<li>
-				<a href="/fix-ny-proposal">Fix NY Proposal</a>
-			</li>
-			<li>
-				<a href="/supporters">Supporters</a>
-			</li>
-			<li>
-				<a href="/press">In The News</a>
-			</li>
-			<li>
-				<a class="button"
-				   href="https://www.change.org/p/speaker-heastie-majority-leader-flanagan-fix-nyc-failing-transit-system-with-the-move-ny-fair-plan?recruiter=516383072&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition"
-				   target="_blank">Sign our petition</a>
-			</li>
+			{% for navItem in navItems %}
+				<li>
+					<a href="{{ navItem.url }}" class="{% if navItem.button==true %} button {% endif %} {% if navItem.slug == pageID %} active {% endif %}">
+						{{ navItem.title }}
+					</a>
+				</li>
+			{% endfor %}
+
 		</ul>
 		<ul class="social-items">
 			<li><a href="" class="facebook"><img src="/assets/img/facebook.png"></a></li>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:300,300i,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,700|Roboto:300,300i,400,400i,500,500i,700,700i');
 
 h1, h2, h3, h4, h5 {
   font-family: $oswald;
@@ -6,39 +6,70 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-weight: 500;
-  font-size: 8vw;
+  font-size: 7vw;
 
   @media only screen and (min-width: $sm-min-width) {
 	font-size: 5vw;
   }
 
+  @media only screen and (min-width: $md-min-width) {
+	font-size: 4vw;
+  }
+
   @media only screen and (min-width: $lg-min-width) {
-    font-size: 61px;
+    font-size: 50px;
   }
 }
 
 h2 {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 42px;
+  font-weight: 700;
+  font-size: 8vw;
+  margin-bottom: 15px;
+
+  @media only screen and (min-width: $sm-min-width) {
+	font-size: 5vw;
+  }
+  @media only screen and (min-width: $md-min-width) {
+	font-size: 3vw;
+  }
+  @media only screen and (min-width: $lg-min-width) {
+	font-size: 36px;
+  }
 }
 
 .pullquote, h3 {
   font-family: $oswald;
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 7.5vw;
+  font-weight: 200;
+  line-height: 1.2;
 
   @media only screen and (min-width: $sm-min-width) {
-	font-size: 42px;
+	font-size: 5vw;
+  }
+  @media only screen and (min-width: $md-min-width) {
+	font-size: 3vw;
+  }
+  @media only screen and (min-width: $lg-min-width) {
+	font-size: 36px;
   }
 
   &.orange-text {
 	color: $orange;
   }
+
+  p {
+	margin-top: 0;
+  }
+}
+
+ul + .pullquote {
+  margin-top: 60px;
 }
 
 h3 {
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -54,15 +85,20 @@ h5 {
 }
 
 h5 + p {
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 p + h5 {
   margin: 50px 0 0;
 }
 
+b {
+  font-weight: 800;
+}
+
 .highlighter {
   margin-left: 10px;
+  margin-right: 40px;
 
   @media only screen and (min-width: $sm-min-width) {
 	margin-left: 20px;

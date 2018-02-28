@@ -1,5 +1,5 @@
 /* Example media query selectors */
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:300,300i,400,400i,500,500i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,700|Roboto:300,300i,400,400i,500,500i,700,700i");
 .clear:before, .clear:after {
   content: ' ';
   display: table; }
@@ -16,11 +16,15 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300;
   color: #000;
   margin: 0;
   padding: 0;
   width: 100vw; }
+  @media only screen and (min-width: 1024px) {
+    body {
+      font-size: 16px; } }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -391,11 +395,13 @@ textarea {
 .header {
   position: absolute;
   top: 20px;
-  left: 4.12%;
-  right: 4.12%;
+  left: 8.33%;
+  right: 8.33%;
   z-index: 99; }
   @media only screen and (min-width: 1280px) {
     .header {
+      left: 4.12%;
+      right: 4.12%;
       max-width: 1320px;
       margin: 0 auto; } }
   .header .logo {
@@ -414,16 +420,23 @@ textarea {
     width: 80%;
     float: left;
     margin-top: 20px; }
+    @media only screen and (min-width: 1024px) {
+      .header nav {
+        margin-top: 10px; } }
     .header nav button.menu-toggle {
       color: #000;
       display: block;
       position: absolute;
-      padding: 10px 20px;
+      padding: 10px 0 10px 20px;
       text-transform: uppercase;
       right: 0;
       top: 0;
-      z-index: 999; }
-      @media only screen and (min-width: 768px) {
+      z-index: 999;
+      outline: none;
+      background: none;
+      cursor: pointer;
+      border: 0; }
+      @media only screen and (min-width: 1024px) {
         .header nav button.menu-toggle {
           display: none; } }
       .header nav button.menu-toggle.menu-active {
@@ -432,15 +445,15 @@ textarea {
       display: none;
       list-style: none;
       line-height: 1;
-      margin-top: 0;
-      padding: 100px 40px 0;
+      margin: 0;
+      padding: 100px 8.33% 0;
       position: fixed;
       background: #ea6d23;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1024px) {
         .header nav ul {
           padding: 0;
           display: block;
@@ -459,22 +472,22 @@ textarea {
         display: block; }
       .header nav ul li {
         display: block;
-        margin: 30px 0; }
-        @media only screen and (min-width: 768px) {
+        margin: 45px 0; }
+        @media only screen and (min-width: 1024px) {
           .header nav ul li {
             vertical-align: top;
-            margin: 0 1.5vw;
+            margin: 5px 1.3vw;
             display: inline-block; } }
         @media only screen and (min-width: 1280px) {
           .header nav ul li {
-            margin: 0 15px; } }
+            margin: 10px 15px; } }
         .header nav ul li a {
           text-decoration: none;
           text-transform: uppercase;
           font-weight: bold;
           font-size: 8vw;
           color: #fff; }
-          @media only screen and (min-width: 768px) {
+          @media only screen and (min-width: 1024px) {
             .header nav ul li a {
               font-size: 1vw;
               color: #000; } }
@@ -483,11 +496,15 @@ textarea {
               font-size: 14px; } }
           .header nav ul li a.button {
             padding: 10px;
-            background: #ea6d23; }
+            background: #ea6d23;
+            color: #fff; }
             @media only screen and (max-width: 1023px) {
               .header nav ul li a.button {
                 padding: 0;
                 background: transparent; } }
+          @media only screen and (min-width: 1024px) {
+            .header nav ul li a.active {
+              border-bottom: 2px solid #ea6d23; } }
       .header nav ul.social-items {
         float: right;
         margin-top: 0;
@@ -496,21 +513,28 @@ textarea {
         position: fixed;
         bottom: 50px;
         top: auto; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1024px) {
           .header nav ul.social-items {
             position: relative;
-            bottom: auto; } }
+            bottom: auto;
+            margin-top: 0px; } }
+        @media only screen and (min-width: 1280px) {
+          .header nav ul.social-items {
+            margin-top: -5px; } }
         .header nav ul.social-items li {
           margin-right: 1vw;
           display: inline-block; }
-          @media only screen and (min-width: 1280px) {
+          @media only screen and (min-width: 768px) {
             .header nav ul.social-items li {
               margin-right: 0px; } }
           .header nav ul.social-items li a {
             display: block; }
             .header nav ul.social-items li a.facebook, .header nav ul.social-items li a.twitter {
               width: 50px; }
-              @media only screen and (min-width: 768px) {
+              @media only screen and (min-width: 1024px) {
+                .header nav ul.social-items li a.facebook, .header nav ul.social-items li a.twitter {
+                  width: 2.5vw; } }
+              @media only screen and (min-width: 1280px) {
                 .header nav ul.social-items li a.facebook, .header nav ul.social-items li a.twitter {
                   width: 35px; } }
               .header nav ul.social-items li a.facebook img, .header nav ul.social-items li a.twitter img {
@@ -525,31 +549,57 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-weight: 500;
-  font-size: 8vw; }
+  font-size: 7vw; }
   @media only screen and (min-width: 768px) {
     h1 {
       font-size: 5vw; } }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 4vw; } }
   @media only screen and (min-width: 1280px) {
     h1 {
-      font-size: 61px; } }
+      font-size: 50px; } }
 
 h2 {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 42px; }
+  font-weight: 700;
+  font-size: 8vw;
+  margin-bottom: 15px; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 5vw; } }
+  @media only screen and (min-width: 1024px) {
+    h2 {
+      font-size: 3vw; } }
+  @media only screen and (min-width: 1280px) {
+    h2 {
+      font-size: 36px; } }
 
 .pullquote, h3 {
   font-family: "Oswald", sans-serif;
-  font-size: 28px;
-  font-weight: 500; }
+  font-size: 7.5vw;
+  font-weight: 200;
+  line-height: 1.2; }
   @media only screen and (min-width: 768px) {
     .pullquote, h3 {
-      font-size: 42px; } }
+      font-size: 5vw; } }
+  @media only screen and (min-width: 1024px) {
+    .pullquote, h3 {
+      font-size: 3vw; } }
+  @media only screen and (min-width: 1280px) {
+    .pullquote, h3 {
+      font-size: 36px; } }
   .pullquote.orange-text, h3.orange-text {
     color: #ea6d23; }
+  .pullquote p, h3 p {
+    margin-top: 0; }
+
+ul + .pullquote {
+  margin-top: 60px; }
 
 h3 {
-  margin-top: 80px; }
+  margin-top: 40px;
+  margin-bottom: 20px; }
 
 h4 {
   color: #ea6d23;
@@ -562,13 +612,17 @@ h5 {
   font-size: 1em; }
 
 h5 + p {
-  margin-top: 0; }
+  margin-top: 10px; }
 
 p + h5 {
   margin: 50px 0 0; }
 
+b {
+  font-weight: 800; }
+
 .highlighter {
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-right: 40px; }
   @media only screen and (min-width: 768px) {
     .highlighter {
       margin-left: 20px; } }
@@ -631,10 +685,13 @@ main > section {
   padding-bottom: 1px; }
   main > section .section-inner-wrapper {
     margin: 60px 8.333%; }
+    @media only screen and (min-width: 1024px) {
+      main > section .section-inner-wrapper {
+        margin: 100px 8.33% 120px; } }
     @media only screen and (min-width: 1280px) {
       main > section .section-inner-wrapper {
         max-width: calc(1440px - 16.67%);
-        margin: 60px auto; } }
+        margin: 100px auto; } }
     @media only screen and (min-width: 1280px) {
       main > section .section-inner-wrapper .content-wrapper {
         margin: 0 4.12%; } }
@@ -664,6 +721,12 @@ main > section {
               top: -40px;
               left: -40px;
               font-size: 2.5em; } }
+          @media only screen and (min-width: 1024px) {
+            main > section .section-inner-wrapper .content-wrapper ol > li:before {
+              top: -35px; } }
+          @media only screen and (min-width: 1280px) {
+            main > section .section-inner-wrapper .content-wrapper ol > li:before {
+              top: -32px; } }
     main > section .section-inner-wrapper .content-wrapper ul {
       padding-left: 15px; }
       @media only screen and (min-width: 768px) {
@@ -689,8 +752,15 @@ main > section {
               width: 15px;
               height: 15px; } }
     main > section .section-inner-wrapper .heading-wrapper {
-      width: 50%;
+      width: 80%;
       padding-top: 10vw; }
+      @media only screen and (min-width: 768px) {
+        main > section .section-inner-wrapper .heading-wrapper {
+          padding-top: 5vw;
+          padding-bottom: 5vw; } }
+      @media only screen and (min-width: 1280px) {
+        main > section .section-inner-wrapper .heading-wrapper {
+          width: 55%; } }
       main > section .section-inner-wrapper .heading-wrapper h1 a {
         color: #000; }
   main > section.main-heading {
@@ -698,9 +768,14 @@ main > section {
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: top center; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1024px) {
       main > section.main-heading {
         height: 60vw; } }
+    @media only screen and (min-width: 1500px) {
+      main > section.main-heading {
+        height: auto;
+        background-size: cover;
+        background-position: bottom center; } }
     main > section.main-heading#mission-header {
       background-image: url("/assets/img/home-header.jpg"); }
     main > section.main-heading#fix-ny-plan {
@@ -708,7 +783,10 @@ main > section {
       background-color: #e8e8e8; }
       @media only screen and (min-width: 768px) {
         main > section.main-heading#fix-ny-plan {
-          background-position: -100px 50px; } }
+          background-position: center; } }
+      @media only screen and (min-width: 1024px) {
+        main > section.main-heading#fix-ny-plan {
+          height: auto; } }
     main > section.main-heading .section-inner-wrapper {
       margin-top: 0; }
   main > section#mission {
@@ -735,6 +813,20 @@ main > section {
     @media only screen and (min-width: 768px) {
       main > section#sign-our-petition {
         min-height: 50vw; } }
+    @media only screen and (min-width: 1024px) {
+      main > section#sign-our-petition {
+        background-size: cover; } }
+    main > section#sign-our-petition .heading-wrapper {
+      width: 75%; }
+      @media only screen and (min-width: 768px) {
+        main > section#sign-our-petition .heading-wrapper {
+          width: 60%; } }
+      @media only screen and (min-width: 1024px) {
+        main > section#sign-our-petition .heading-wrapper {
+          width: 50%; } }
+      @media only screen and (min-width: 1280px) {
+        main > section#sign-our-petition .heading-wrapper {
+          width: 40%; } }
   main > section#plan-overview {
     background: #ea6d23; }
     main > section#plan-overview .section-inner-wrapper {
@@ -746,6 +838,9 @@ main > section {
       @media only screen and (max-width: 1023px) {
         main > section#plan-overview .download {
           font-size: 14px; } }
+  @media only screen and (min-width: 768px) {
+    main > section#benefits h3 {
+      margin-top: 50px; } }
   main > section#other-elements {
     background: #e8e8e8; }
 
@@ -771,7 +866,7 @@ body#supporters main:before {
       background-size: 100%; } }
 
 body#supporters main .supporter-groups {
-  margin-top: 100px; }
+  margin-top: 20px; }
   @media only screen and (min-width: 768px) {
     body#supporters main .supporter-groups {
       column-count: 2;
@@ -788,15 +883,19 @@ body#supporters main .supporter-groups {
 
 body#press main:before {
   content: "";
-  background: url("/assets/img/press.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: left 33%;
   position: fixed;
   top: 75px;
   bottom: 0;
   left: 0;
   right: 0; }
+  @media only screen and (min-width: 768px) {
+    body#press main:before {
+      background: url("/assets/img/press.png");
+      background-repeat: no-repeat; } }
+  @media only screen and (min-width: 1024px) {
+    body#press main:before {
+      background-size: 100%;
+      background-position: left 33%; } }
 
 body#press main #press-list ul {
   width: 100%; }
@@ -806,6 +905,11 @@ body#press main #press-list ul {
   body#press main #press-list ul li.press-item {
     position: relative;
     margin: 100px 0; }
+    body#press main #press-list ul li.press-item:first-of-type {
+      margin-top: 50px; }
+      @media only screen and (min-width: 1280px) {
+        body#press main #press-list ul li.press-item:first-of-type {
+          margin-top: 150px; } }
     body#press main #press-list ul li.press-item a {
       color: #000;
       text-decoration: none; }
@@ -826,7 +930,10 @@ body#press main #press-list ul {
           font-style: italic;
           margin-right: 10px; }
     body#press main #press-list ul li.press-item:before {
-      top: 20px; }
+      top: 10px; }
+      @media only screen and (min-width: 768px) {
+        body#press main #press-list ul li.press-item:before {
+          top: 20px; } }
 
 @media print {
   * {

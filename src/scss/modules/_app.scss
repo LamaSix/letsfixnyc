@@ -27,9 +27,12 @@ main {
 
 	  margin: 60px 8.333%;
 
+	  @media only screen and (min-width: $md-min-width) {
+		margin: 100px 8.33% 120px;
+	  }
 	  @media only screen and (min-width: $lg-min-width) {
 		max-width: calc(1440px - 16.67%);
-		margin: 60px auto;
+		margin: 100px auto;
 	  }
 
 	  .content-wrapper {
@@ -67,6 +70,12 @@ main {
 				left: -40px;
 				font-size: 2.5em;
 			  }
+			  @media only screen and (min-width: $md-min-width) {
+				top: -35px;
+			  }
+			  @media only screen and (min-width: $lg-min-width) {
+				top: -32px;
+			  }
 			}
 		  }
 		}
@@ -103,8 +112,17 @@ main {
 	  }
 
 	  .heading-wrapper {
-		width: 50%;
+		width: 80%;
 		padding-top: 10vw;
+
+		@media only screen and (min-width: $sm-min-width) {
+		  padding-top: 5vw;
+		  padding-bottom: 5vw;
+		}
+
+		@media only screen and (min-width: $lg-min-width) {
+		  width: 55%;
+		}
 
 		h1 {
 		  a {
@@ -120,8 +138,14 @@ main {
 	  background-size: auto 100%;
 	  background-position: top center;
 
-	  @media only screen and (min-width: $sm-min-width) {
+	  @media only screen and (min-width: $md-min-width) {
 		height: 60vw;
+	  }
+
+	  @media only screen and (min-width: $xl-min-width) {
+		height: auto;
+		background-size: cover;
+		background-position: bottom center;
 	  }
 
 	  &#mission-header {
@@ -132,7 +156,11 @@ main {
 		background-image: url('/assets/img/whitearrow.png');
 		background-color: $grey;
 		@media only screen and (min-width: $sm-min-width) {
-		  background-position: -100px 50px;
+		  background-position: center;
+		}
+
+		@media only screen and (min-width: $md-min-width) {
+		  height: auto;
 		}
 	  }
 
@@ -178,6 +206,23 @@ main {
 	  @media only screen and (min-width: $sm-min-width) {
 		min-height: 50vw;
 	  }
+	  @media only screen and (min-width: $md-min-width) {
+		background-size: cover;
+	  }
+
+	  .heading-wrapper {
+		width: 75%;
+
+		@media only screen and (min-width: $sm-min-width) {
+		  width: 60%;
+		}
+		@media only screen and (min-width: $md-min-width) {
+		  width: 50%;
+		}
+		@media only screen and (min-width: $lg-min-width) {
+		  width: 40%;
+		}
+	  }
 	}
 
 	&#plan-overview {
@@ -197,6 +242,14 @@ main {
 		}
 
 	  }
+	}
+
+	&#benefits {
+		h3 {
+		  @media only screen and (min-width: $sm-min-width) {
+			margin-top: 50px;
+		  }
+		}
 	}
 
 	&#other-elements {
@@ -233,7 +286,7 @@ body#supporters {
 	}
 
 	.supporter-groups {
-	  margin-top: 100px;
+	  margin-top: 20px;
 
 	  @media only screen and (min-width: $sm-min-width) {
 		column-count: 2;
@@ -262,15 +315,20 @@ body#press {
 
 	&:before {
 	  content: "";
-	  background: url('/assets/img/press.png');
-	  background-repeat: no-repeat;
-	  background-size: 100%;
-	  background-position: left 33%;
 	  position: fixed;
 	  top: 75px;
 	  bottom: 0;
 	  left: 0;
 	  right: 0;
+
+	  @media only screen and (min-width: $sm-min-width) {
+		background: url('/assets/img/press.png');
+		background-repeat: no-repeat;
+	  }
+	  @media only screen and (min-width: $md-min-width) {
+		background-size: 100%;
+		background-position: left 33%;
+	  }
 	}
 
 	#press-list {
@@ -284,6 +342,15 @@ body#press {
 		li.press-item {
 		  position: relative;
 		  margin: 100px 0;
+
+		  &:first-of-type {
+			margin-top: 50px;
+
+			@media only screen and (min-width: $lg-min-width) {
+			  margin-top: 150px;
+			}
+		  }
+
 
 		  a {
 			color: #000;
@@ -315,7 +382,11 @@ body#press {
 		  }
 
 		  &:before {
-			top: 20px;
+			top: 10px;
+
+			@media only screen and (min-width: $sm-min-width) {
+			  top: 20px;
+			}
 		  }
 		}
 	  }
