@@ -1,13 +1,13 @@
 {% set navItems = [
 	{
 		url: '/',
-		slug: 'home',
-		title: 'Our mission & principals'
+		slug: 'about-us',
+		title: 'About Us'
 	},
 	{
-		url: '/fix-ny-proposal',
-		slug: 'fix-ny-proposal',
-		title: 'Fix NY Proposal'
+		url: '/fix-nyc-plan',
+		slug: 'fix-nyc-plan',
+		title: 'Fix NYC Plan'
 	},
 	{
 		url: '/supporters',
@@ -17,7 +17,7 @@
 	{
 		url: '/press',
 		slug: 'press',
-		title: 'Press'
+		title: 'In the News'
 	},
 	{
 		url: 'https://www.change.org/p/speaker-heastie-majority-leader-flanagan-fix-nyc-failing-transit-system-with-the-move-ny-fair-plan?recruiter=516383072&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition',
@@ -53,8 +53,8 @@
 
 		</ul>
 		<ul class="social-items">
-			<li><a href="" class="facebook"><img src="/assets/img/facebook.png"></a></li>
-			<li><a href="" class="twitter"><img src="/assets/img/twitter.png"></a></li>
+			<li><a href="https://www.facebook.com/FixNY/" class="facebook"><img src="/assets/img/facebook.png"></a></li>
+			<li><a href="https://twitter.com/Fix_NewYork" class="twitter"><img src="/assets/img/twitter.png"></a></li>
 		</ul>
 	</nav>
 </header>

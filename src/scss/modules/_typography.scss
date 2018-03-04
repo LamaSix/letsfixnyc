@@ -123,6 +123,10 @@ b {
 	@media only screen and (min-width: $sm-min-width) {
 	  box-shadow: 50px 0 0 $orange, -20px 0 0 $orange;
 	}
+
+	a {
+	  color: #fff !important;
+	}
   }
 
   &.grey > * {

@@ -87,4 +87,4 @@ gulp.task('dev', ['css','js', 'nunjucks', 'browser-sync'], function() {
   gulp.watch("app/*.html", ['bs-reload']);
 })
 
-gulp.task('default', ['css', 'js']);
+gulp.task('default', ['css', 'js', 'nunjucks']);

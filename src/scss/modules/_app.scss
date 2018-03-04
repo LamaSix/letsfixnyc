@@ -1,8 +1,12 @@
 
 
-body#home main {
+body#about-us main {
   padding-top: 100px;
   margin-top: -100px;
+
+  .main-heading {
+	margin-bottom: 0;
+  }
 }
 
 a.button {
@@ -28,16 +32,16 @@ main {
 	  margin: 60px 8.333%;
 
 	  @media only screen and (min-width: $md-min-width) {
-		margin: 100px 8.33% 120px;
+		margin: 100px 16.667% 120px;
 	  }
 	  @media only screen and (min-width: $lg-min-width) {
-		max-width: calc(1440px - 16.67%);
+		max-width: calc(1440px - 33.3333%);
 		margin: 100px auto;
 	  }
 
 	  .content-wrapper {
 		@media only screen and (min-width: $lg-min-width) {
-		  margin: 0 4.12%;
+		  margin: 0 8.333%;
 		}
 
 		ol, ul {
@@ -121,7 +125,7 @@ main {
 		}
 
 		@media only screen and (min-width: $lg-min-width) {
-		  width: 55%;
+		  width: 65%;
 		}
 
 		h1 {
@@ -138,10 +142,6 @@ main {
 	  background-size: auto 100%;
 	  background-position: top center;
 
-	  @media only screen and (min-width: $md-min-width) {
-		height: 60vw;
-	  }
-
 	  @media only screen and (min-width: $xl-min-width) {
 		height: auto;
 		background-size: cover;
@@ -152,7 +152,7 @@ main {
 		background-image: url('/assets/img/home-header.jpg');
 	  }
 
-	  &#fix-ny-plan {
+	  &#fix-nyc-plan {
 		background-image: url('/assets/img/whitearrow.png');
 		background-color: $grey;
 		@media only screen and (min-width: $sm-min-width) {
@@ -171,22 +171,11 @@ main {
 
 
 	&#mission {
-	  background-image: url('/assets/img/bg-map.png');
-	  background-color: $grey;
+	  background-image: url('/assets/img/bg-map-white.png');
+	  background-color: #fff;
+	  background-size: cover;
 
 	  .continued-statement {
-		p {
-		  @media only screen and (min-width: $sm-min-width) {
-			display: block;
-			width: 30%;
-			float: left;
-			margin-left: 5%;
-
-			&:first-of-type {
-			  margin-left: 0;
-			}
-		  }
-		}
 
 		&:after {
 		  display: table;
@@ -205,6 +194,7 @@ main {
 
 	  @media only screen and (min-width: $sm-min-width) {
 		min-height: 50vw;
+		height: auto;
 	  }
 	  @media only screen and (min-width: $md-min-width) {
 		background-size: cover;
