@@ -11,17 +11,17 @@
 			link: "http://www.nydailynews.com/opinion/stand-96-support-congestion-pricing-article-1.3786696"
 		},
 		{
+			publisher: "newsday.png",
+			title: "How NYC congestion pricing affects LI [Op-Ed]",
+			byline: "By Randi F. Marshall",
+			date: "January 30, 2018",
+			link: "https://www.newsday.com/opinion/columnists/randi-marshall/li-reps-should-read-this-about-tolling-plan-1.16448173"
+		},
+		{
 			publisher: "newyorktimes.png",
 			title: "A Pricing Scheme to Unclog New York’s Arteries [Editorial]",
 			date: "January 22, 2018",
 			link: "https://www.nytimes.com/2018/01/22/opinion/nyc-subway-congestion-pricing-cuomo.html"
-		},
-		{
-			publisher: "crains.png",
-			title: "Traffic congestion costs metro economy $20 billion a year: study",
-			byline: "By Will Bredderman",
-			date: "January 18, 2018",
-			link: "http://www.crainsnewyork.com/article/20180118/POLITICS/180119895/traffic-congestion-costs-metro-economy-20-billion-a-year-study"
 		},
 		{
 			publisher: "newyorktimes.png",
@@ -31,50 +31,16 @@
 			link: "https://www.nytimes.com/2018/01/07/opinion/new-york-traffic-cuomo.html"
 		},
 		{
-			publisher: "newsday.png",
-			title: "Widen input for tolling plan [Editorial]",
-			date: "October 8, 2017",
-			link: "https://www.newsday.com/opinion/editorial/widen-input-for-tolling-plan-1.14372460"
-		},
-		{
-			publisher: "newsday.png",
-			title: "How NYC congestion pricing affects LI [Op-Ed]",
-			byline: "By Randi F. Marshall",
-			date: "January 30, 2018",
-			link: "https://www.newsday.com/opinion/columnists/randi-marshall/li-reps-should-read-this-about-tolling-plan-1.16448173"
-		},
-		{
-			publisher: "ny1.png",
-			title: "Congestion Concerns: Sam Schwartz [Video]",
-			date: "January 26, 2018",
-			link: "http://www.ny1.com/nyc/all-boroughs/inside-city-hall/2018/01/27/congestion-concerns"
-		},
-		{
-			publisher: "citylab.png",
-			title: "Could Congestion Pricing Finally Work for New York City?",
-			byline: "By Laura Bliss",
-			date: "January 18, 2018",
-			link: "https://www.citylab.com/transportation/2018/01/could-congestion-pricing-finally-work-for-new-york-city/550958/"
-		},
-		{
-			publisher: "newyorkdailynews.png",
-			title: "The right way to do congestion pricing [Opinion]",
-			byline: "By Robert Rodriguez and Alex Matthiessen",
-			date: "December 8, 2017",
-			link: "http://www.nydailynews.com/opinion/congestion-pricing-article-1.3684274"
-		},
-		{
-			publisher: "newyorktimes.png",
-			title: "New York’s Tilt Toward Congestion Pricing Was Years in the Making",
-			byline: "By Winnie Hu",
-			date: "November 28, 2017",
-			link: "https://www.nytimes.com/2017/11/28/nyregion/congestion-pricing-new-york.html"
-		},
-		{
 			publisher: "amny.png",
 			title: "Mayor’s plan won’t get NYC traffic flowing [Editorial]",
 			date: "October 24, 2017",
 			link: "https://www.amny.com/opinion/editorial/mayor-s-plan-won-t-get-nyc-traffic-flowing-1.14605992"
+		},
+		{
+			publisher: "newsday.png",
+			title: "Widen input for tolling plan [Editorial]",
+			date: "October 8, 2017",
+			link: "https://www.newsday.com/opinion/editorial/widen-input-for-tolling-plan-1.14372460"
 		}
 	]
 %}
