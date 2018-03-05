@@ -425,7 +425,7 @@ textarea {
       color: #000;
       display: block;
       position: absolute;
-      padding: 10px 0 10px 20px;
+      padding: 0 0 10px 20px;
       text-transform: uppercase;
       right: 0;
       top: 0;
@@ -801,7 +801,7 @@ main > section {
         background-size: cover;
         background-position: bottom center; } }
     main > section.main-heading#mission-header {
-      background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3)); }
+      background-image: linear-gradient(to top, transparent, transparent 75%, rgba(0, 0, 0, 0.8)); }
     main > section.main-heading#fix-nyc-plan {
       background-image: url("/assets/img/whitearrow.png");
       background-color: #e8e8e8;
