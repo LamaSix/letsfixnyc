@@ -33,7 +33,7 @@
 <header class="header" role="banner">
 	<div class="logo">
 		<a href="/">
-			{% if pageID == 'home' %}
+			{% if pageID == 'about-us' %}
 				<img src="/assets/img/logo-white.png" alt="Logo">
 			{% else %}
 				<img src="/assets/img/logo-black.png" alt="Logo">
