@@ -804,13 +804,19 @@ main > section {
       background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3)); }
     main > section.main-heading#fix-nyc-plan {
       background-image: url("/assets/img/whitearrow.png");
-      background-color: #e8e8e8; }
+      background-color: #e8e8e8;
+      background-size: 150% auto;
+      background-position: bottom right; }
       @media only screen and (min-width: 768px) {
         main > section.main-heading#fix-nyc-plan {
-          background-position: center; } }
+          background-position: bottom center;
+          background-size: 100% auto; } }
       @media only screen and (min-width: 1024px) {
         main > section.main-heading#fix-nyc-plan {
           height: auto; } }
+      @media only screen and (min-width: 1280px) {
+        main > section.main-heading#fix-nyc-plan {
+          background-size: auto 100%; } }
     main > section.main-heading .section-inner-wrapper {
       margin-top: 0; }
   main > section#mission {
