@@ -815,7 +815,7 @@ main > section {
     main > section.main-heading#fix-nyc-plan {
       padding: 100px 0;
       background-image: url("/assets/img/bg-map-white.png");
-      background-color: #e8e8e8;
+      background-color: #fff;
       background-size: cover; }
       main > section.main-heading#fix-nyc-plan .download {
         text-align: center;
