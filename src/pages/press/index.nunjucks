@@ -63,12 +63,18 @@
 				<li class="press-item">
 					<a href="{{ pressItem.link }}" target="_blank">
 						<div class="headline">
-							{{ pressItem.title }} - <em>{{ pressItem.type }}</em>
+							{{ pressItem.title }}
 						</div>
 						<div class="publisher">
 							<img src="/assets/img/press/{{ pressItem.publisher }}">
 						</div>
 						<div class="meta">
+							{% if pressItem.type %}
+							<span class="type">
+									{{ pressItem.type }},
+							</span>
+							{% endif %}
+
 							{% if pressItem.byline %}
 								<span class="byline">
 									{{ pressItem.byline }}
