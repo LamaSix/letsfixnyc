@@ -15,6 +15,7 @@
   text-rendering: optimizeLegibility; }
 
 body {
+  background-color: #e8e8e8;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -541,7 +542,7 @@ textarea {
                 width: 100%;
                 height: auto; }
 
-body#about-us .header nav button.menu-toggle, body#about-us .header ul li a {
+body#fix-nyc-transit-plan .header nav button.menu-toggle, body#fix-nyc-transit-plan .header ul li a {
   color: #fff; }
 
 h1, h2, h3, h4, h5 {
@@ -666,12 +667,6 @@ b {
   background: #333;
   color: #fff;
   text-shadow: none; }
-
-body#about-us main {
-  padding-top: 100px;
-  margin-top: -100px; }
-  body#about-us main .main-heading {
-    margin-bottom: 0; }
 
 a.button {
   font-family: "Oswald", sans-serif;
@@ -808,6 +803,8 @@ main > section {
         height: auto;
         background-size: cover;
         background-position: bottom center; } }
+    main > section.main-heading#mission-header {
+      background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.15) 5%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.8)); }
     main > section.main-heading#fix-nyc-plan {
       background-image: url("/assets/img/whitearrow.png");
       background-color: #e8e8e8;

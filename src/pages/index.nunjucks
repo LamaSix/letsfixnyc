@@ -5,6 +5,18 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
+<section id="mission-header" class="main-heading">
+	<div class="section-background">
+		<img src="/assets/img/home-header.jpg" srcset="/assets/img/home-header_2x.jpg 1500w"
+			 alt="background image of subway platform congestion">
+	</div>
+	<div class="section-inner-wrapper">
+		<div class="heading-wrapper">
+			<h1 class="highlighter"><span>The region’s transportation is in full-blown crisis. Only a meaningful congestion pricing plan will get NYC moving again.</span>
+			</h1>
+		</div>
+	</div>
+</section>
 <section id="fix-nyc-plan" class="main-heading">
 	<div class="section-inner-wrapper">
 		<div class="content-wrapper">
