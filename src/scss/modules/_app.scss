@@ -188,23 +188,11 @@ main {
 	  }
 
 	  &#fix-nyc-plan {
-		background-image: url('/assets/img/whitearrow.png');
+		padding: 100px 0;
+		background-image: url('/assets/img/bg-map-white.png');
 		background-color: $grey;
-		background-size: 150% auto;
-		background-position: bottom right;
+		background-size: cover;
 
-		@media only screen and (min-width: $sm-min-width) {
-		  background-position: bottom center;
-		  background-size: 100% auto;
-  		}
-
-  		@media only screen and (min-width: $md-min-width) {
-  		  height: auto;
-  		}
-
-		@media only screen and (min-width: $lg-min-width) {
-  		  background-size: auto 100%;
-  		}
 
 		.download {
 		  text-align: center;
@@ -224,22 +212,7 @@ main {
 
 	  .section-inner-wrapper {
 		margin-top: 0;
-	  }
-	}
-
-
-	&#mission {
-	  background-image: url('/assets/img/bg-map-white.png');
-	  background-color: #fff;
-	  background-size: cover;
-
-	  .continued-statement {
-
-		&:after {
-		  display: table;
-		  content: "";
-		  clear: both;
-		}
+		margin-bottom: 0;
 	  }
 	}
 
@@ -278,8 +251,13 @@ main {
 	  background: $orange;
 
 	  .section-inner-wrapper {
-		margin-top: 80px;
-		margin-bottom: 80px;
+		margin-top: 100px;
+		margin-bottom: 110px;
+
+		@media only screen and (min-width: $sm-min-width) {
+		  margin-top: 160px;
+		  margin-bottom: 180px;
+		}
 	  }
 	}
 
@@ -343,6 +321,7 @@ body#supporters {
 }
 
 body#press {
+  background-color: #fff;
   main {
 
 	&:before {
