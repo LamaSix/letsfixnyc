@@ -1,29 +1,13 @@
 {% set navItems = [
 	{
 		url: '/',
-		slug: 'about-us',
-		title: 'About Us'
-	},
-	{
-		url: '/fix-nyc-plan',
-		slug: 'fix-nyc-plan',
-		title: 'Fix NYC Plan'
-	},
-	{
-		url: '/supporters',
-		slug: 'supporters',
-		title: 'Supporters'
+		slug: 'fix-nyc-transit-plan',
+		title: 'Fix NYC Transit Plan'
 	},
 	{
 		url: '/press',
 		slug: 'press',
 		title: 'In the News'
-	},
-	{
-		url: 'https://www.change.org/p/speaker-heastie-majority-leader-flanagan-fix-nyc-failing-transit-system-with-the-move-ny-fair-plan?recruiter=516383072&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition',
-		slug: 'petition',
-		title: 'Sign our petition',
-		button: true
 	}
 ]
 %}

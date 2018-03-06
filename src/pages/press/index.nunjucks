@@ -6,39 +6,45 @@
 	set pressItems = [
 		{
 			publisher: "newyorkdailynews.png",
-			title: "Stand up for the 96% and support congestion pricing [Editorial]",
+			title: "Stand up for the 96% and support congestion pricing",
+			type: "Editorial",
 			date: "January 30, 2018",
 			link: "http://www.nydailynews.com/opinion/stand-96-support-congestion-pricing-article-1.3786696"
 		},
 		{
 			publisher: "newsday.png",
-			title: "How NYC congestion pricing affects LI [Op-Ed]",
+			title: "How NYC congestion pricing affects LI",
+			type: "Op-Ed",
 			byline: "By Randi F. Marshall",
 			date: "January 30, 2018",
 			link: "https://www.newsday.com/opinion/columnists/randi-marshall/li-reps-should-read-this-about-tolling-plan-1.16448173"
 		},
 		{
 			publisher: "newyorktimes.png",
-			title: "A Pricing Scheme to Unclog New York’s Arteries [Editorial]",
+			title: "A Pricing Scheme to Unclog New York’s Arteries",
+			type: "Editorial",
 			date: "January 22, 2018",
 			link: "https://www.nytimes.com/2018/01/22/opinion/nyc-subway-congestion-pricing-cuomo.html"
 		},
 		{
 			publisher: "newyorktimes.png",
-			title: "How to Get New York Moving Again [Op-Ed]",
+			title: "How to Get New York Moving Again",
+			type: "Op-Ed",
 			byline: "By David Leonhardt",
 			date: "January 7, 2018",
 			link: "https://www.nytimes.com/2018/01/07/opinion/new-york-traffic-cuomo.html"
 		},
 		{
 			publisher: "amny.png",
-			title: "Mayor’s plan won’t get NYC traffic flowing [Editorial]",
+			title: "Mayor’s plan won’t get NYC traffic flowing",
+			type: "Editorial",
 			date: "October 24, 2017",
 			link: "https://www.amny.com/opinion/editorial/mayor-s-plan-won-t-get-nyc-traffic-flowing-1.14605992"
 		},
 		{
 			publisher: "newsday.png",
-			title: "Widen input for tolling plan [Editorial]",
+			title: "Widen input for tolling plan",
+			type: "Editorial",
 			date: "October 8, 2017",
 			link: "https://www.newsday.com/opinion/editorial/widen-input-for-tolling-plan-1.14372460"
 		}
@@ -57,7 +63,7 @@
 				<li class="press-item">
 					<a href="{{ pressItem.link }}" target="_blank">
 						<div class="headline">
-							{{ pressItem.title }}
+							{{ pressItem.title }} - <em>{{ pressItem.type }}</em>
 						</div>
 						<div class="publisher">
 							<img src="/assets/img/press/{{ pressItem.publisher }}">
