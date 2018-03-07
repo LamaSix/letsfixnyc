@@ -195,10 +195,23 @@ main {
 
 	  &#fix-nyc-plan {
 		padding: 100px 0;
-		background-image: url('/assets/img/bg-map-white.png');
-		background-color: #fff;
-		background-size: cover;
+		background-image: url('/assets/img/whitearrow.png');
+		background-color: $grey;
+		background-size: 150% auto;
+		background-position: bottom right;
 
+		@media only screen and (min-width: $sm-min-width) {
+		  background-position: bottom center;
+		  background-size: 100% auto;
+		}
+
+		@media only screen and (min-width: $md-min-width) {
+		  height: auto;
+		}
+
+		@media only screen and (min-width: $lg-min-width) {
+		  background-size: auto 100%;
+		}
 
 		.download {
 		  text-align: center;
@@ -280,6 +293,7 @@ main {
 }
 
 body#supporters {
+  background-color: #fff;
   main {
 
 	&:before {

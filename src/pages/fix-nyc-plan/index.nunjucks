@@ -1,0 +1,50 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'fix-nyc-plan' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<section id="fix-nyc-plan" class="main-heading">
+	<div class="section-inner-wrapper">
+		<div class="content-wrapper">
+			<h1 class="highlighter"><span>Fix NYC Plan</span></h1>
+			<p>
+				Traffic congestion and public transportation failures have sparked outrage among New Yorkers and the
+				city’s labor, business, environmental, and transportation advocates. Following 2017’s “Summer of Hell,”
+				Governor Cuomo announced that “congestion pricing is an idea whose time has come.” In October, the
+				governor convened the Fix NYC panel, a group of experts and regional leaders, and charged them with
+				developing a congestion pricing plan to tackle the “pressing issue of heavy congestion on New York City
+				roads and highways, while producing a dedicated funding stream for the MTA.”
+			</p>
+			<p>
+				The region’s transportation is in full-blown crisis. Only a meaningful congestion pricing plan will get
+				NYC moving again. Fix NYC is exactly that plan.
+			</p>
+
+			<div class="download">
+				<a href="/assets/pdf/fix-nyc-infographic.pdf" class="button">Download Overview of the Plan</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="plan-overview">
+	<div class="section-inner-wrapper">
+		<div class="content-wrapper">
+			<div class="image">
+				<img src="/assets/img/big-logo.png">
+			</div>
+		</div>
+	</div>
+</section>
+<section id="sign-our-petition">
+	<div class="section-inner-wrapper">
+		<div class="heading-wrapper">
+			<h1 class="highlighter"><span>The time for Albany to act is now! <br> Call your legislators!</span>
+			</h1>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

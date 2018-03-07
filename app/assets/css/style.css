@@ -544,7 +544,7 @@ textarea {
                 width: 100%;
                 height: auto; }
 
-body#fix-nyc-transit-plan .header nav button.menu-toggle, body#fix-nyc-transit-plan .header ul li a {
+body#home .header nav button.menu-toggle, body#home .header ul li a {
   color: #fff; }
 
 h1, h2, h3, h4, h5 {
@@ -814,9 +814,20 @@ main > section {
       background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.15) 5%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.8)); }
     main > section.main-heading#fix-nyc-plan {
       padding: 100px 0;
-      background-image: url("/assets/img/bg-map-white.png");
-      background-color: #fff;
-      background-size: cover; }
+      background-image: url("/assets/img/whitearrow.png");
+      background-color: #e8e8e8;
+      background-size: 150% auto;
+      background-position: bottom right; }
+      @media only screen and (min-width: 768px) {
+        main > section.main-heading#fix-nyc-plan {
+          background-position: bottom center;
+          background-size: 100% auto; } }
+      @media only screen and (min-width: 1024px) {
+        main > section.main-heading#fix-nyc-plan {
+          height: auto; } }
+      @media only screen and (min-width: 1280px) {
+        main > section.main-heading#fix-nyc-plan {
+          background-size: auto 100%; } }
       main > section.main-heading#fix-nyc-plan .download {
         text-align: center;
         margin: 60px 0 25px; }
@@ -871,38 +882,39 @@ main > section {
   height: auto;
   display: block; }
 
-body#supporters main:before {
-  content: "";
-  background: url("/assets/img/greyarrow.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: left bottom;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-top: 75px;
-  z-index: -1; }
-  @media only screen and (min-width: 768px) {
-    body#supporters main:before {
-      background-size: 100%; } }
-
-body#supporters main .supporter-groups {
-  margin-top: 20px; }
-  @media only screen and (min-width: 768px) {
-    body#supporters main .supporter-groups {
-      column-count: 2;
-      column-gap: 100px; } }
-  body#supporters main .supporter-groups .supporters {
-    margin: 50px 0;
-    break-inside: avoid; }
-    body#supporters main .supporter-groups .supporters ul li {
-      margin: 10px 0; }
-      body#supporters main .supporter-groups .supporters ul li:before {
-        left: -20px;
-        width: 10px;
-        height: 10px; }
+body#supporters {
+  background-color: #fff; }
+  body#supporters main:before {
+    content: "";
+    background: url("/assets/img/greyarrow.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: left bottom;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 75px;
+    z-index: -1; }
+    @media only screen and (min-width: 768px) {
+      body#supporters main:before {
+        background-size: 100%; } }
+  body#supporters main .supporter-groups {
+    margin-top: 20px; }
+    @media only screen and (min-width: 768px) {
+      body#supporters main .supporter-groups {
+        column-count: 2;
+        column-gap: 100px; } }
+    body#supporters main .supporter-groups .supporters {
+      margin: 50px 0;
+      break-inside: avoid; }
+      body#supporters main .supporter-groups .supporters ul li {
+        margin: 10px 0; }
+        body#supporters main .supporter-groups .supporters ul li:before {
+          left: -20px;
+          width: 10px;
+          height: 10px; }
 
 body#press {
   background-color: #fff; }

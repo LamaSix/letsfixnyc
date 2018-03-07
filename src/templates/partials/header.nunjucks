@@ -1,8 +1,18 @@
 {% set navItems = [
 	{
 		url: '/',
-		slug: 'fix-nyc-transit-plan',
+		slug: 'home',
+		title: 'About Us'
+	},
+	{
+		url: '/fix-nyc-plan',
+		slug: 'fix-nyc-plan',
 		title: 'Fix NYC Plan'
+	},
+	{
+		url: '/supporters',
+		slug: 'supporters',
+		title: 'Supporters'
 	},
 	{
 		url: '/press',
@@ -17,7 +27,7 @@
 <header class="header" role="banner">
 	<div class="logo">
 		<a href="/">
-			{% if pageID == 'fix-nyc-transit-plan' %}
+			{% if pageID == 'home' %}
 				<img src="/assets/img/logo-white.png" alt="Logo">
 			{% else %}
 				<img src="/assets/img/logo-black.png" alt="Logo">
@@ -28,11 +38,13 @@
 		<button class="menu-toggle">&#9776; Menu</button>
 		<ul class="nav-items">
 			{% for navItem in navItems %}
-				<li>
-					<a href="{{ navItem.url }}" class="{% if navItem.button==true %} button {% endif %} {% if navItem.slug == pageID %} active {% endif %}">
-						{{ navItem.title }}
-					</a>
-				</li>
+				{% if navItem.slug !== 'home' %}
+					<li>
+						<a href="{{ navItem.url }}" class="{% if navItem.button==true %} button {% endif %} {% if navItem.slug == pageID %} active {% endif %}">
+							{{ navItem.title }}
+						</a>
+					</li>
+				{% endif %}
 			{% endfor %}
 
 		</ul>
