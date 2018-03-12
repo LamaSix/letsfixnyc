@@ -6,7 +6,8 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-weight: 500;
-  font-size: 7vw;
+  font-size: 10vw;
+  margin-bottom: 15vw;
 
   @media only screen and (min-width: $sm-min-width) {
 	font-size: 5vw;
@@ -14,6 +15,7 @@ h1 {
 
   @media only screen and (min-width: $md-min-width) {
 	font-size: 4vw;
+	margin-bottom: 80px;
   }
 
   @media only screen and (min-width: $lg-min-width) {

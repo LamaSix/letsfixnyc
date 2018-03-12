@@ -157,10 +157,11 @@ main {
 		@media only screen and (min-width: $sm-min-width) {
 		  padding-top: 5vw;
 		  padding-bottom: 5vw;
+		  width: 50%;
 		}
 
 		@media only screen and (min-width: $lg-min-width) {
-		  width: 65%;
+		  width: 40%;
 		}
 
 		h1 {

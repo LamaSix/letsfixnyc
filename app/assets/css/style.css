@@ -552,13 +552,15 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-weight: 500;
-  font-size: 7vw; }
+  font-size: 10vw;
+  margin-bottom: 15vw; }
   @media only screen and (min-width: 768px) {
     h1 {
       font-size: 5vw; } }
   @media only screen and (min-width: 1024px) {
     h1 {
-      font-size: 4vw; } }
+      font-size: 4vw;
+      margin-bottom: 80px; } }
   @media only screen and (min-width: 1280px) {
     h1 {
       font-size: 50px; } }
@@ -794,10 +796,11 @@ main > section {
       @media only screen and (min-width: 768px) {
         main > section .section-inner-wrapper .heading-wrapper {
           padding-top: 5vw;
-          padding-bottom: 5vw; } }
+          padding-bottom: 5vw;
+          width: 50%; } }
       @media only screen and (min-width: 1280px) {
         main > section .section-inner-wrapper .heading-wrapper {
-          width: 65%; } }
+          width: 40%; } }
       main > section .section-inner-wrapper .heading-wrapper h1 a {
         color: #000; }
   main > section.main-heading {
