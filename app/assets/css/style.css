@@ -991,20 +991,29 @@ body#press {
       padding: 45px 150px; } }
   @media only screen and (min-width: 1024px) {
     .call-form-wrapper {
-      width: 50%;
+      width: 45%;
       padding: 35px;
       position: absolute;
-      top: 50px;
+      top: 0;
       right: 0;
       margin: 0; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1280px) {
     .call-form-wrapper {
       width: 30%;
       padding: 35px;
       position: absolute;
-      top: 5vw;
+      top: 2vw;
       right: 0;
       margin: 0; } }
+  .call-form-wrapper h5 {
+    margin-bottom: 20px;
+    padding: 0 5px; }
+    @media only screen and (min-width: 768px) {
+      .call-form-wrapper h5 {
+        font-size: 16px; } }
+    @media only screen and (min-width: 1024px) {
+      .call-form-wrapper h5 {
+        font-size: 20px; } }
   .call-form-wrapper label {
     display: none; }
   .call-form-wrapper input, .call-form-wrapper button {

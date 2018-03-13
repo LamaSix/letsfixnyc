@@ -17,6 +17,7 @@
 			</h1>
 		</div>
 		<div id="revmsg-click-to-call" class="call-form-wrapper">
+			<h5>Complete the form below to be connected with your legislator! </h5>
 			<form id="revmsg-CallSignupForm" method="post" action="//phone.reverehq.com/outgoing/" accept-charset="utf-8">
 				<input type="hidden" name="campaign_line" value="8443340461" id="campaign_line">
 
